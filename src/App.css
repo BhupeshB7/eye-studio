@@ -1,38 +1,170 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Dhurjati&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: #000428 !important;
+}
+.navbar-background {
+  background: #000428 !important;
+}
+
+.text-color,
+.nav-link {
+  color: rgb(132, 183, 253) !important;
+  font-family: "Dhurjati", sans-serif;
+  font-size: 23px !important;
+}
+.navbar-toggler {
+  border: 2px solid rgb(132, 183, 253) !important;
+  background: rgb(132, 183, 253) !important;
+  color: #000428 !important;
+}
+.image-container {
+  position: relative;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* .card2{
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.6
+  )  !important;
+} */
+.centered-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /* Adjust background color and opacity */
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.centered-card p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  /* background-image: linear-gradient(to top, #fcc5e4 0%, #fda34b 15%, #ff7882 35%, #c8699e 52%, #7046aa 71%, #0c1db8 87%, #020f75 100%);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text; */
+  color: #000428;
+}
+.line {
+  width: 80px;
+  height: 2px;
+  background-color: #333; /* Adjust line color */
+  margin: 5px auto; /* Adjust margin to center the line */
+}
+.text-gradient {
+  font-size: 24px;
+  font-weight: 630;
+  background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.line2 {
+  width: 120px;
+  height: 2px;
+  background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+  margin-top: -13px;
+}
+.sub-text {
+  font-size: 16px;
+  font-weight: normal;
+  color: antiquewhite;
+}
+.image-containerAbout {
+  display: inline-block;
+  position: relative;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.bordered-image {
+  border-radius: 4px;
+  display: block;
+  transition: transform 0.3s ease; 
+}
+.image-containerAbout:hover .bordered-image {
+  transform: scale(1.03); /* Scales the image on hover */
+}
+.border {
+  position: absolute;
+  left: 55px;
+  bottom: -15px;
+  border: 2px solid white !important; /* Set the color of the border as per your preference */
+  width: 280px;
+  height: 350px;
+  border-radius: 3px;
+  z-index: 0;
+}
+.border1 {
+  position: absolute;
+  left: 55px;
+  bottom: -15px;
+  border: 2px solid white !important; /* Set the color of the border as per your preference */
+  width: 90%;
+  height: 350px;
+  border-radius: 3px;
+  z-index: 0;
+}
+.text-gradient2{
+  font-size: 24px;
+  font-weight: 630;
+  background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(to top, #9be15d 0%, #00e3ae 100%);
+}
+.font-color{
+  background: #f3b4b4 !important;
+}
+.navbar-toggler-icon{
+ background-image: var(--bs-navbar-toggler-icon-bg) !important;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background: #797979;
+  transition: all 0.5s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #222224;
+}
+
+::-webkit-scrollbar-track {
+  background: #f9f9f9;
+}
+.portofolio-card{
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.portofolio-card .card-subitem{
+  margin: 7px;
 }
