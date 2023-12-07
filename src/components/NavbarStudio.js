@@ -9,7 +9,7 @@ function NavbarStudio() {
     <Navbar expand="lg" className="navbar-background">
       <Container className="navbar-background">
         <Navbar.Brand href="/" className="text-color">
-          Eye-Studio
+        Shubhlagnam
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

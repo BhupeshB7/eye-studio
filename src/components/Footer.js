@@ -152,10 +152,10 @@ export default function Footer() {
                 info@example.com
               </p>
               <p>
-                <MDBIcon icon="phone" className="me-3" /> + 01 234 567 88
+                <MDBIcon icon="phone" className="me-3" /> <a href="tel:+91 7631979510" className="p-text">+91 7631979510</a>
               </p>
               <p>
-                <MDBIcon icon="print" className="me-3" /> + 01 234 567 89
+                <MDBIcon icon="print" className="me-3" /> <a href="tel:+91 8102936580" className="p-text">+91 8102936580</a>
               </p>
             </MDBCol>
           </MDBRow>
@@ -163,13 +163,19 @@ export default function Footer() {
       </section>
 
       <div
-        className="text-center p-4"
+        className="text-center p-1  text-secondary"
         style={{ backgroundColor: "rgba(0, 0, 0, 0.05)" }}
       >
         © 2021 Copyright:
-        <a className="text-reset fw-bold" href="https://mdbootstrap.com/">
-          MDBootstrap.com
-        </a>
+        <h6 className="text-reset fw-bold" >
+          Shubhlagnam
+        </h6>
+      </div>
+      <div
+        className="text-center p-1 text-secondary"
+        style={{ backgroundColor: "rgba(0, 0, 0, 0.05)" }}
+      >
+       Developed By: Code Canvas
       </div>
     </MDBFooter>
   );

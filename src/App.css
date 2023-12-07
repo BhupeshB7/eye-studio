@@ -230,3 +230,7 @@ margin: 10px !important;
 .heading{
 font-size: 32px !important;
 }
+.p-text{
+  text-decoration: none !important;
+  color: #797979;
+}
