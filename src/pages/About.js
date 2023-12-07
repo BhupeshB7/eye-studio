@@ -2,6 +2,7 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import NavbarStudio from "../components/NavbarStudio";
 import Footer from "../components/Footer";
+import Testimonial from "./Testimonial";
 
 const About = () => {
   return (
@@ -150,6 +151,8 @@ const About = () => {
           </Col>
         </Row>
       </Container>
+      <div className="mt-5"></div>
+      <Testimonial/>
       <div className="mt-5"></div>
       <Footer/>
     </div>

@@ -13,6 +13,7 @@ import {
   MDBRipple,
 } from "mdb-react-ui-kit";
 import Testomonial from "../pages/Testomonial";
+import Testimonial from "../pages/Testimonial";
 const Home = () => {
   return (
     <div>
@@ -197,6 +198,7 @@ const Home = () => {
         </Row>
       </Container>
       {/* Portfolio End */}
+      <Testimonial/>
       <Footer />
     </div>
   );

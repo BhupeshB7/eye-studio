@@ -54,23 +54,16 @@ html {
   background: #f9f9f9;
 }
 
-body {
-  /* font-size: 1.6rem; */
-  background: var(--bg);
-}
+
 .container1 {
   max-width: 124rem;
   padding: 4rem 1rem;
   margin: 0 auto;
 }
-.heading {
-  padding: 1rem 0;
-  font-size: 3.5rem;
-  text-align: center;
-}
+
 
 .swiper_container {
-  height: 52rem;
+  height: 50rem;
   padding: 2rem 0;
   position: relative;
 }
@@ -174,7 +167,8 @@ body {
 }
 
 .swiper-pagination .swiper-pagination-bullet {
-  filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+  filter: drop-shadow(0px 8px 24px rgba(252, 252, 252, 0.1));
+  background: var(--white);
 }
 
 .swiper-pagination .swiper-pagination-bullet-active {
