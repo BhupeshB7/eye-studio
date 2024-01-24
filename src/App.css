@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Dhurjati&display=swap");
 *,
+:root{
+  --bg-color:#141414;
+  --heading-color:rgb(255, 226, 123);
+  --paragraph-color:rgb(255, 233, 194);
+}
 *::before,
 *::after {
   margin: 0;
@@ -12,6 +17,7 @@ html {
 }
 body {
   background: #000428 !important;
+  background: var(--bg-color) !important;
 }
 .navbar-background {
   background: #000428 !important;
@@ -141,7 +147,7 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 1px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -211,15 +217,18 @@ margin: 10px !important;
 }
 .card{
   background: transparent;
+  border: none !important;
+  box-shadow:none !important;
+
 }
 .card-body {
     flex: 1 1 auto;
-    background: #000428;
+    background: var(--bg-color);
     padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
     color: var(--bs-card-color);
 }
 .card-title{
-  color: rgb(132, 183, 253) !important;
+  color: var(--heading-color) !important;
   font-family: "Dhurjati", sans-serif;
   font-size: 27px !important;
 }
@@ -228,9 +237,115 @@ margin: 10px !important;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 .heading{
-font-size: 32px !important;
+font-size: 28px !important;
+color: var(--heading-color);
 }
 .p-text{
   text-decoration: none !important;
   color: #797979;
+}
+.p-text1{
+  font-size: 20px !important;
+color: var(--paragraph-color);
+}
+.card .bg-image {
+  border-top-left-radius: none !important;
+  border-top-right-radius: none !important;
+}
+.contact-card{
+  background:  transparent !important;;
+}
+.form-control:focus,.form-control:active,.form-control:visited,.form-control:hover,.form-control:focus-within,.form-control:focus-visible{
+  background: transparent !important;
+  color: white !important;
+}
+.form-label{
+  color: var(--paragraph-color) !important;
+  font-size: 14px !important;
+}
+.contact-button{
+  box-shadow: none !important;;
+  background: var(--heading-color) !important;
+  padding: 5px !important;
+  color: #000428 !important;
+  border: none  !important;
+}
+.form-control{
+  color: var(--paragraph-color) !important;
+}
+.modal {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.modal-content {
+  background-color: #000428 !important;
+  border: none !important;
+}
+
+.modal-header,
+.modal-footer {
+  border: none !important;
+}
+/* Add these styles to your CSS */
+.preview-container {
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.preview-image {
+  width: 65px;
+  height: 65px;
+  object-fit: cover;
+  border: 1px solid #ccc;
+  margin-bottom: 5px;
+}
+
+.remove-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+  color: red !important;
+}
+
+
+/* You can adjust the max-width and padding as needed */
+.portfolioCard_subItem {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  box-sizing: border-box;
+}
+@media (max-width: 575px) { /* Mobile devices */
+  .portfolioCard_subItem img {
+    height: 350px;
+    width: 350px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) { /* Small devices */
+  .portfolioCard_subItem img {
+    height: 400px;
+    width: 400px;
+  }
+}
+
+@media (min-width: 768px) { /* Large devices */
+  .portfolioCard_subItem img {
+    height: 300px;
+    width: 300px;
+    padding: 5px;
+  }
+}
+.whatsappIcon{
+  background: #000;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  margin: 8px;
 }

@@ -26,8 +26,8 @@ function NavbarStudio() {
             <LinkContainer to="/portfolio">
               <Nav.Link className="text-color">Portfolio</Nav.Link>
             </LinkContainer>
-            <LinkContainer to="/package">
-              <Nav.Link className="text-color">Package</Nav.Link>
+            <LinkContainer to="/admin/portfolio/create">
+              <Nav.Link className="text-color">Add Portfolio</Nav.Link>
             </LinkContainer>
           </Nav>
         </Navbar.Collapse>

@@ -10,6 +10,10 @@ import {
 
 export default function ContactForm() {
   return (
+    <div>
+      <div>
+        <p className="p-text1">Hi! Let us Know how we can help and we'll respond shortly.</p>
+      </div>
     <form className="m-3">
       <MDBInput
         id="form4Example1"
@@ -27,9 +31,10 @@ export default function ContactForm() {
         style={{ height: "40px" }}
       />
       <MDBTextArea wrapperClass="mb-4" label="Message" id="textAreaExample" rows={4} />
-      <MDBBtn type="submit" block>
+      <MDBBtn className="contact-button" type="submit" block>
         Submit
       </MDBBtn>
     </form>
+    </div>
   );
 }

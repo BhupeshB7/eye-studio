@@ -23,7 +23,7 @@ const Contact = () => {
                 <p>Introduction</p>
                 {/* <hr style={{width:'80%'}}/> */}
                 <div className="line"></div>
-                <p>About Eye Studio</p>
+                <p>About Shubhlagnam Studio</p>
               </div>
             </div>
           </Col>
@@ -34,7 +34,7 @@ const Contact = () => {
           <Col xs={12} md={6} lg={5}>
             <p className="text-gradient">Contact Us</p>
             <div className="line2"></div>
-            <p className="text-color">I’d love to tell your story.</p>
+            <h6 className="heading text-start m-2">Shubhlagnam Studio - Indian Wedding Photographer</h6>
             <p className="sub-text">
               I’m Excited To Go Wherever Your Love Story Is Taking Me And
               Looking Forward To Hearing From You! We'd Love To Hear From You!
@@ -43,7 +43,7 @@ const Contact = () => {
             </p>
           </Col>
           <Col xs={10} md={5} lg={6} className="m-1">
-            <div className="card mb-3" style={{ minWidth: "350px" }}>
+            <div className="card contact-card mb-3" style={{ minWidth: "350px" }}>
               <ContactForm />
             </div>
           </Col>

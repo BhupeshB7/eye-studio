@@ -30,9 +30,6 @@ export default function Footer() {
           <a href="" className="me-4  text-secondary">
             <MDBIcon fab icon="instagram" />
           </a>
-          <a href="" className="me-4 text-secondary">
-            <MDBIcon fab icon="whatsapp" />
-          </a>
         </div>
       </section>
 
@@ -75,28 +72,19 @@ export default function Footer() {
                 <a
                   href="#!"
                   className="text-reset"
-                  style={{ textDecoration: "none " }}
-                >
-                  Package
-                </a>
-              </p>
-              <p>
-                <a
-                  href="#!"
-                  className="text-reset"
                   style={{ textDecoration: "none" }}
                 >
                   Stories
                 </a>
               </p>
               <p>
-                <a
-                  href="#!"
+              <LinkContainer
+                  to="/portfolio"
                   className="text-reset"
                   style={{ textDecoration: "none" }}
                 >
-                  Portfolio
-                </a>
+                  <span>Portfolio </span>
+                </LinkContainer>
               </p>
               <p>
                 <a
