@@ -157,9 +157,9 @@ const AdminPortfolio = () => {
         Create Post
       </Button>
 
-      <Modal show={showModal} onHide={handleModalClose}>
-        <Modal.Header closeButton>
-          <Modal.Title>Create Post</Modal.Title>
+      <Modal show={showModal} onHide={handleModalClose}backdrop="static" keyboard={false}>
+        <Modal.Header closeButton  >
+          <Modal.Title className='text-light'>Create Post</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           {error && <Alert variant="danger">{error}</Alert>}
@@ -167,7 +167,7 @@ const AdminPortfolio = () => {
           <Form onSubmit={handleSubmit}>
             <Form.Group controlId="coverImage">
               <Form.Label>Cover Image</Form.Label>
-              <Dropzone onDrop={handleCoverImageDrop} multiple={false} accept="image/*">
+              <Dropzone className='dropzone' onDrop={handleCoverImageDrop} multiple={false} accept="image/*">
                 {({ getRootProps, getInputProps }) => (
                   <div {...getRootProps()} className="dropzone">
                     <input {...getInputProps()} />
@@ -220,7 +220,7 @@ const AdminPortfolio = () => {
               </div>
             </Form.Group>
 
-            <Button variant="primary" type="submit">
+            <Button variant="info"style={{width:'130px',margin:'5px'}} type="submit">
               Submit
             </Button>
           </Form>

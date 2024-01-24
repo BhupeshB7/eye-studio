@@ -278,8 +278,8 @@ color: var(--paragraph-color);
 }
 
 .modal-content {
-  background-color: #000428 !important;
-  border: none !important;
+  background-color: #160e0ee3 !important;
+  border: 1.6px solid wheat !important;
 }
 
 .modal-header,
@@ -348,4 +348,39 @@ color: var(--paragraph-color);
   text-align: center;
   padding: 10px;
   margin: 8px;
+}
+.modal-header .btn-close {
+  color: darkred !important;
+  background-image: url('https://cdn-icons-png.flaticon.com/128/11450/11450177.png') !important;
+  background-size: 100% 100% !important;
+background-position: center}
+
+
+.modal-header .btn-close:hover {
+  color: darkred !important;
+}
+.dropzone p{
+  border: 1px solid #141414;;
+  background: #0f0909e3;
+  color: #e7f6c5;
+  height: 60px ;
+  width: 100%;
+  text-align: center;
+  border-radius: 7px;
+  font-size: 12px;
+}
+.modal-body .form-control{
+  background: #100a0ae3 !important;
+  color: wheat !important;
+}
+.modal-body .form-control:focus {
+  box-shadow: none !important;
+  border: 1px solid wheat !important;;
+}
+.portfolio-details_content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 100%;
 }

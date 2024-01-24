@@ -260,7 +260,6 @@ import { Col, Container, Navbar, Row } from "react-bootstrap";
 import { useInView } from "react-intersection-observer";
 import Footer from "../components/Footer";
 import NavbarStudio from "../components/NavbarStudio";
-import Portfolio from "./Portfolio";
 
 const PortfolioList = () => {
   const [posts, setPosts] = useState([]);
@@ -373,7 +372,7 @@ const PortfolioList = () => {
         <div className="line2"></div>
         <p className="p-text">Details: {post.details}</p>
         <p className="p-text">Content: {post.content}</p>
-
+{/* <img src={post.coverImage} height='400px' width='400px'/> */}
         <div>
           <Col className="portofolio-card">
             {post.images.map((item, index) => (
@@ -403,7 +402,7 @@ const PortfolioList = () => {
 </Container>
 
 
-    <Portfolio/>
+    
     <Footer/>
     </div>
   );
