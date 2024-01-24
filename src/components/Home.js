@@ -33,7 +33,7 @@ const Home = () => {
             <Col xs={12} md={7} lg={8}>
               <div>
                 <p className="text-gradient">
-                  TOP WEDDING PHOTOGRAPHERS IN PATNA
+                  TOP WEDDING PHOTOGRAPHERS IN BEGUSARAI
                 </p>
                 <div className="line2"></div>
                 <p className="sub-text">
