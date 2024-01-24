@@ -269,6 +269,7 @@ color: var(--paragraph-color);
   padding: 5px !important;
   color: #000428 !important;
   border: none  !important;
+  width: 100px !important;
 }
 .form-control{
   color: var(--paragraph-color) !important;
