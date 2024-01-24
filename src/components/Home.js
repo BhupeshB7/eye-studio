@@ -7,7 +7,6 @@ import { Col, Container, Row } from "react-bootstrap";
 
 import Testomonial from "../pages/Testomonial";
 import Testimonial from "../pages/Testimonial";
-import Login from "../pages/Login";
 import Portfolio from "../pages/Portfolio";
 import WhatsApp from "./WhatsApp";
 const Home = () => {

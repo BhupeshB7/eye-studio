@@ -166,6 +166,92 @@
 //   );
 // };
 // export default PortfolioList;
+// {/* <Container>
+//       <Row>
+//         <p className="text-gradient text-center p-2">Latest Portfolio</p>
+//         {posts.map((post) => (
+//           <div key={post._id} className="mb-4">
+//             <div
+//               id={`carousel-${post._id}`}
+//               className="carousel slide"
+//               data-bs-ride="carousel"
+//             >
+//               <div className="carousel-inner">
+//                 {post.images.map((image, index) => (
+//                   <div
+//                     key={index}
+//                     className={`carousel-item ${index === 0 ? "active" : ""}`}
+//                   >
+//                     <img
+//                       src={image}
+//                       className="d-block w-100"
+//                       alt={`Image ${index}`}
+//                       style={{ maxHeight: "300px", objectFit: "cover" }}
+//                     />
+//                   </div>
+//                 ))}
+//               </div>
+//               <button
+//                 className="carousel-control-prev"
+//                 type="button"
+//                 data-bs-target={`#carousel-${post._id}`}
+//                 data-bs-slide="prev"
+//               >
+//                 <span
+//                   className="carousel-control-prev-icon"
+//                   aria-hidden="true"
+//                 ></span>
+//                 <span className="visually-hidden">Previous</span>
+//               </button>
+//               <button
+//                 className="carousel-control-next"
+//                 type="button"
+//                 data-bs-target={`#carousel-${post._id}`}
+//                 data-bs-slide="next"
+//               >
+//                 <span
+//                   className="carousel-control-next-icon"
+//                   aria-hidden="true"
+//                 ></span>
+//                 <span className="visually-hidden">Next</span>
+//               </button>
+//             </div>
+//             <p className="text-gradient2">Title: {post.title}</p>
+//             <div className="line2"></div>
+//             <p className="p-text">Details: {post.details}</p>
+//             <p className="p-text">Content: {post.content}</p>
+
+//             <div>
+//               {posts.map((post) => (
+//                 <div key={post._id} className="mb-4">
+//                   <Col className="portofolio-card">
+//                     {post.images.map((item, index) => (
+//                       <Images
+//                         key={index}
+//                         item={item}
+//                         showMore={showMore[post._id]}
+//                       />
+//                     ))}
+//                   </Col>
+//                   <button
+//                     onClick={() => toggleShowMore(post._id)}
+//                     className="btn btn-info mt-2 m-1"
+//                   >
+//                     {showMore[post._id] ? "View Less" : "View More"}
+//                   </button>
+//                   {/* <button
+//                     onClick={() => handleDeletePost(post._id)}
+//                     className="btn btn-danger mt-2 m-1"
+//                   >
+//                     Delete
+//                   </button> */}
+//                 </div>
+//               ))}
+//             </div>
+//           </div>
+//         ))}
+//       </Row>
+//     </Container> */}
 
 import React, { useState, useEffect } from "react";
 import axios from "axios";
@@ -206,22 +292,22 @@ const PortfolioList = () => {
     }
   };
 
-  const handleDeletePost = async (postId) => {
-    try {
-      const response = await axios.delete(
-        `https://studio-n1sc.onrender.com/api/portfolio/posts/${postId}`
-      );
-      const data = response.data;
+  // const handleDeletePost = async (postId) => {
+  //   try {
+  //     const response = await axios.delete(
+  //       `https://studio-n1sc.onrender.com/api/portfolio/posts/${postId}`
+  //     );
+  //     const data = response.data;
 
-      if (data.success) {
-        fetchPosts();
-      } else {
-        console.error("Failed to delete post:", data.error);
-      }
-    } catch (error) {
-      console.error("Error deleting post:", error);
-    }
-  };
+  //     if (data.success) {
+  //       fetchPosts();
+  //     } else {
+  //       console.error("Failed to delete post:", data.error);
+  //     }
+  //   } catch (error) {
+  //     console.error("Error deleting post:", error);
+  //   }
+  // };
 
   const toggleShowMore = (postId) => {
     setShowMore((prevShowMore) => ({
@@ -233,92 +319,90 @@ const PortfolioList = () => {
   return (
     <div>
 <NavbarStudio/>
-    <Container>
-      <Row>
-        <p className="text-gradient text-center p-2">Latest Portfolio</p>
-        {posts.map((post) => (
-          <div key={post._id} className="mb-4">
-            <div
-              id={`carousel-${post._id}`}
-              className="carousel slide"
-              data-bs-ride="carousel"
-            >
-              <div className="carousel-inner">
-                {post.images.map((image, index) => (
-                  <div
-                    key={index}
-                    className={`carousel-item ${index === 0 ? "active" : ""}`}
-                  >
-                    <img
-                      src={image}
-                      className="d-block w-100"
-                      alt={`Image ${index}`}
-                      style={{ maxHeight: "300px", objectFit: "cover" }}
-                    />
-                  </div>
-                ))}
+<Container>
+  <Row>
+    <p className="text-gradient text-center p-2">Latest Portfolio</p>
+    {posts.map((post) => (
+      <div key={post._id} className="mb-4">
+        <div
+          id={`carousel-${post._id}`}
+          className="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div className="carousel-inner">
+            {post.images.map((image, index) => (
+              <div
+                key={index}
+                className={`carousel-item ${index === 0 ? "active" : ""}`}
+              >
+                <img
+                  src={image}
+                  className="d-block w-100"
+                  alt={`Image ${index}`}
+                  style={{ maxHeight: "300px", objectFit: "cover" }}
+                />
               </div>
-              <button
-                className="carousel-control-prev"
-                type="button"
-                data-bs-target={`#carousel-${post._id}`}
-                data-bs-slide="prev"
-              >
-                <span
-                  className="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span className="visually-hidden">Previous</span>
-              </button>
-              <button
-                className="carousel-control-next"
-                type="button"
-                data-bs-target={`#carousel-${post._id}`}
-                data-bs-slide="next"
-              >
-                <span
-                  className="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span className="visually-hidden">Next</span>
-              </button>
-            </div>
-            <p className="text-gradient2">Title: {post.title}</p>
-            <div className="line2"></div>
-            <p className="p-text">Details: {post.details}</p>
-            <p className="p-text">Content: {post.content}</p>
-
-            <div>
-              {posts.map((post) => (
-                <div key={post._id} className="mb-4">
-                  <Col className="portofolio-card">
-                    {post.images.map((item, index) => (
-                      <Images
-                        key={index}
-                        item={item}
-                        showMore={showMore[post._id]}
-                      />
-                    ))}
-                  </Col>
-                  <button
-                    onClick={() => toggleShowMore(post._id)}
-                    className="btn btn-info mt-2 m-1"
-                  >
-                    {showMore[post._id] ? "View Less" : "View More"}
-                  </button>
-                  <button
-                    onClick={() => handleDeletePost(post._id)}
-                    className="btn btn-danger mt-2 m-1"
-                  >
-                    Delete
-                  </button>
-                </div>
-              ))}
-            </div>
+            ))}
           </div>
-        ))}
-      </Row>
-    </Container>
+          <button
+            className="carousel-control-prev"
+            type="button"
+            data-bs-target={`#carousel-${post._id}`}
+            data-bs-slide="prev"
+          >
+            <span
+              className="carousel-control-prev-icon"
+              aria-hidden="true"
+            ></span>
+            <span className="visually-hidden">Previous</span>
+          </button>
+          <button
+            className="carousel-control-next"
+            type="button"
+            data-bs-target={`#carousel-${post._id}`}
+            data-bs-slide="next"
+          >
+            <span
+              className="carousel-control-next-icon"
+              aria-hidden="true"
+            ></span>
+            <span className="visually-hidden">Next</span>
+          </button>
+        </div>
+        <p className="text-gradient2">Title: {post.title}</p>
+        <div className="line2"></div>
+        <p className="p-text">Details: {post.details}</p>
+        <p className="p-text">Content: {post.content}</p>
+
+        <div>
+          <Col className="portofolio-card">
+            {post.images.map((item, index) => (
+              <Images
+                key={index}
+                item={item}
+                showMore={showMore[post._id]}
+              />
+            ))}
+          </Col>
+          <button
+            onClick={() => toggleShowMore(post._id)}
+            className="btn btn-info mt-2 m-1"
+          >
+            {showMore[post._id] ? "View Less" : "View More"}
+          </button>
+          {/* <button
+            onClick={() => handleDeletePost(post._id)}
+            className="btn btn-danger mt-2 m-1"
+          >
+            Delete
+          </button> */}
+        </div>
+      </div>
+    ))}
+  </Row>
+</Container>
+
+
     <Portfolio/>
     <Footer/>
     </div>
@@ -357,3 +441,4 @@ const Images = ({ item, showMore }) => {
 };
 
 export default PortfolioList;
+

@@ -6,12 +6,12 @@ const WhatsApp = () => {
   const [isDragging, setIsDragging] = useState(false);
 
   const handleIconClick = () => {
-    if (!isDragging) {
+    
       const phoneNumber = '7631979510'; // Replace with the desired WhatsApp contact number
       const message = 'Hii!';
       const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
       window.location.href = whatsappLink;
-    }
+    
   };
 
   const handleStartDrag = () => {
