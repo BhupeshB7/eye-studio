@@ -30,10 +30,10 @@ const MultiItemCarousel = () => {
 
   // Sample data for the carousel
   const carouselItems = [
-    { id: 1, content: '@Abc' },
+    { id: 1, content: '@doe' },
     { id: 2, content: '@jammy' },
     { id: 3, content: '@david' },
-    { id: 4, content: '@mnoy' },
+    { id: 4, content: '@john' },
     { id: 5, content: '@smith' },
     // Add more items as needed
   ];

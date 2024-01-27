@@ -54,8 +54,9 @@
 import React, { useState } from "react";
 import Footer from "../components/Footer"; // Replace with actual import for Footer
 import { Col, Container, Row } from "react-bootstrap";
-import Lightbox from "react-image-lightbox";
-import "react-image-lightbox/style.css";
+import Lightbox from 'react-18-image-lightbox';
+import 'react-18-image-lightbox/style.css'; 
+// import "react-image-lightbox/style.css";
 import NavbarStudio from "../components/NavbarStudio"; // Replace with actual import for NavbarStudio
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
