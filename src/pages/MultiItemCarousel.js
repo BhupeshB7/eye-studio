@@ -34,7 +34,7 @@ const MultiItemCarousel = () => {
     { id: 2, content: '@jammy' },
     { id: 3, content: '@david' },
     { id: 4, content: '@mnoy' },
-    { id: 5, content: '@efgh' },
+    { id: 5, content: '@smith' },
     // Add more items as needed
   ];
 
