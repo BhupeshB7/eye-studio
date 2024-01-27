@@ -5,6 +5,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import Portfolio from "./Portfolio";
+import Footer from "../components/Footer";
 
 // Lazy load the image component
 const LazyImage = lazy(() => import("../components/LazyImage"));
@@ -72,6 +73,7 @@ const PortfolioDetails = () => {
         </Row>
       </Container>
       <Portfolio/>
+      <Footer/>
     </div>
   );
 };

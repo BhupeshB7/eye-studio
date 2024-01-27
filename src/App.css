@@ -21,18 +21,21 @@ body {
 }
 .navbar-background {
   background: #000428 !important;
+  background-image: linear-gradient(to left, #434343 0%, black 100%) !important;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+ background-blend-mode: multiply,multiply;
 }
 
 .text-color,
 .nav-link {
-  color: rgb(132, 183, 253) !important;
+  color: rgb(237, 183, 125) !important;
   font-family: "Dhurjati", sans-serif;
   font-size: 23px !important;
 }
 .navbar-toggler {
-  border: 2px solid rgb(132, 183, 253) !important;
-  background: rgb(132, 183, 253) !important;
-  color: #000428 !important;
+  border: 2px solid var(--heading-color) !important;
+  background: var(--heading-color) !important;
+  color: #171616 !important;
 }
 .image-container {
   position: relative;
@@ -130,6 +133,16 @@ body {
   border-radius: 3px;
   z-index: 0;
 }
+.border2 {
+  position: absolute;
+  left: 15px;
+  bottom: -10px;
+  border: 2px solid rgb(91, 81, 81) !important; /* Set the color of the border as per your preference */
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  z-index: 0;
+}
 .text-gradient2 {
   font-size: 24px;
   font-weight: 630;
@@ -146,23 +159,7 @@ body {
   background-image: var(--bs-navbar-toggler-icon-bg) !important;
 }
 
-::-webkit-scrollbar {
-  width: 1px;
-}
 
-::-webkit-scrollbar-thumb {
-  border-radius: 1rem;
-  background: #797979;
-  transition: all 0.5s ease-in-out;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #222224;
-}
-
-::-webkit-scrollbar-track {
-  background: #f9f9f9;
-}
 .portofolio-card {
   display: flex;
   align-items: center;
@@ -346,15 +343,37 @@ body {
     padding: 5px;
   }
 }
+@keyframes blink {
+  0% {
+    background-color: #fe8686;
+  }
+  50% {
+    background-color: #afffaf; /* Change to the color you want during the blink */
+  }
+  100% {
+    background-color: #9286fe;
+  }
+}
+
 .whatsappIcon {
-  background: #000;
+  background: #b1dba8;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
+  text-align: center;
+  display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  padding: 10px;
-  margin: 8px;
+  z-index: 1000000;
+  position: fixed;
+  bottom: 50px;
+  right: 30px;
+  transform: scale(1);
+  animation: blink 2s infinite;
+  transition: transform 0.3s ease-in-out; /* Optional: Add smooth transition effect */
 }
+
+
 .modal-header .btn-close {
   color: darkred !important;
   background-image: url("https://cdn-icons-png.flaticon.com/128/11450/11450177.png") !important;
@@ -472,7 +491,7 @@ body {
   .imageGallery {
     img {
       height: 130px;
-      width: 160px;
+      width: 100%;
     }
   }
 }
@@ -481,7 +500,7 @@ body {
   .imageGallery {
     img {
       height: 150px;
-      width: 180px;
+      width: 100%;
     }
   }
 }
@@ -490,9 +509,7 @@ body {
   .imageGallery {
     img {
       height: 180px;
-      width: 210px;
+      width: 100%;
     }
   }
 }
-
-

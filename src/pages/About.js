@@ -2,7 +2,7 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import NavbarStudio from "../components/NavbarStudio";
 import Footer from "../components/Footer";
-import Testimonial from "./Testimonial";
+import MultiItemCarousel from "./MultiItemCarousel";
 
 const About = () => {
   return (
@@ -38,14 +38,14 @@ const About = () => {
             className="d-flex justify-content-center align-items-center"
           >
             <div className="image-containerAbout d-flex justify-content-center align-items-center">
-              <div className="border1"></div>
+              <div className="border2"></div>
               <img
                 className="bordered-image"
                 src="https://img.freepik.com/free-photo/portrait-happy-bearded-young-man-glasses-standing-outdoors_171337-14763.jpg?size=626&ext=jpg&ga=GA1.1.260354095.1700988836&semt=sph"
                 height="350px"
-                width="90%"
+                width="350px"
                 alt="about_sub"
-                style={{ zIndex: "1000" }}
+                style={{ zIndex: "1000",borderRadius:'50%' }}
               />
             </div>
           </Col>
@@ -73,9 +73,9 @@ const About = () => {
               am dedicated to preserving the magic of every moment, creating a
               lasting legacy through the lens of my creativity.
             </p>
-            <h5 className="sub-text">Amit Kumar</h5>
-            <h6 className="text-color">Ceo and Founder</h6>
-            <h6 className="text-gradient2">Shubhlagnam Studio</h6>
+            <h5 className="sub-text text-end">Amit Kumar</h5>
+            <h6 className="text-color text-end">Ceo and Founder</h6>
+            <h6 className="text-gradient2 text-end">Shubhlagnam Studio</h6>
           </Col>
         </Row>
       </Container>
@@ -122,7 +122,7 @@ const About = () => {
         </Row>
       </Container>
       <div className="mt-5"></div>
-      <Testimonial />
+      <MultiItemCarousel />
       <div className="mt-5"></div>
       <Footer />
     </div>

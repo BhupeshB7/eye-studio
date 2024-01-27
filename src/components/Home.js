@@ -5,11 +5,10 @@ import Footer from "./Footer";
 import { motion, useAnimation } from "framer-motion";
 import { Col, Container, Row } from "react-bootstrap";
 
-import Testomonial from "../pages/Testomonial";
-import Testimonial from "../pages/Testimonial";
 import Portfolio from "../pages/Portfolio";
 import WhatsApp from "./WhatsApp";
 import PopUpComponent from "./PopUpComponent";
+import MultiItemCarousel from "../pages/MultiItemCarousel";
 const Home = () => {
   const controls = useAnimation();
 
@@ -74,11 +73,11 @@ const Home = () => {
         </Container>
       </motion.div>
 
-      <Testomonial />
+      {/* <Testomonial /> */}
       {/* POrtfolio */}
       <Portfolio />
+      <MultiItemCarousel/>
       {/* Portfolio End */}
-      <Testimonial />
       <WhatsApp/>
       <Footer />
     </div>

@@ -6,7 +6,7 @@ import { LinkContainer } from "react-router-bootstrap";
 function NavbarStudio() {
   return (
     <Navbar expand="lg" className="navbar-background">
-      <Container className="navbar-background">
+      <Container className="navbar-backgrounds">
         <Navbar.Brand href="/" className="text-color">
         Shubhlagnam
         </Navbar.Brand>
@@ -24,6 +24,9 @@ function NavbarStudio() {
             </LinkContainer>
             <LinkContainer to="/portfolio">
               <Nav.Link className="text-color">Portfolio</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to="/images">
+              <Nav.Link className="text-color">Image</Nav.Link>
             </LinkContainer>
             <LinkContainer to="/admin/portfolio/create">
               <Nav.Link className="text-color">Add Portfolio</Nav.Link>
