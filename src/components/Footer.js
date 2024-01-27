@@ -42,13 +42,13 @@ export default function Footer() {
             <MDBCol md="3" lg="4" xl="3" className="mx-auto mb-4">
               <h6 className="text-uppercase text-light fw-bold mb-4">
                 <MDBIcon icon="gem" className="me-3" />
-                Eye Studio
+                Shubhlagnam Studio
               </h6>
-              <p className="text-light">
+              {/* <p className="text-light">
                 Here you can use rows and columns to organize your footer
                 content. Lorem ipsum dolor sit amet, consectetur adipisicing
                 elit.
-              </p>
+              </p> */}
             </MDBCol>
 
             <MDBCol
@@ -87,13 +87,13 @@ export default function Footer() {
                 </LinkContainer>
               </p>
               <p>
-                <a
-                  href="#!"
+              <LinkContainer
+                  to="/images"
                   className="text-reset"
-                  style={{ textDecoration: "none " }}
+                  style={{ textDecoration: "none" }}
                 >
-                  Images
-                </a>
+                  <span>Image </span>
+                </LinkContainer>
               </p>
             </MDBCol>
 
@@ -133,7 +133,7 @@ export default function Footer() {
               <h6 className="text-uppercase fw-bold mb-4">Contact</h6>
               <p>
                 <MDBIcon icon="home" className="me-2" />
-                New York, NY 10012, US
+                BEGUSARAI, Bihar IN 848206
               </p>
               <p>
                 <MDBIcon icon="envelope" className="me-3" />
@@ -154,7 +154,7 @@ export default function Footer() {
         className="text-center p-1  text-secondary"
         style={{ backgroundColor: "rgba(0, 0, 0, 0.05)" }}
       >
-        © 2021 Copyright:
+        © 2024 Copyright:
         <h6 className="text-reset fw-bold" >
           Shubhlagnam
         </h6>

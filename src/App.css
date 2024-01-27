@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Dhurjati&display=swap");
 *,
-:root{
-  --bg-color:#141414;
-  --heading-color:rgb(255, 226, 123);
-  --paragraph-color:rgb(255, 233, 194);
+:root {
+  --bg-color: #141414;
+  --heading-color: rgb(255, 226, 123);
+  --paragraph-color: rgb(255, 233, 194);
 }
 *::before,
 *::after {
@@ -105,7 +105,7 @@ body {
 .bordered-image {
   border-radius: 4px;
   display: block;
-  transition: transform 0.3s ease; 
+  transition: transform 0.3s ease;
 }
 .image-containerAbout:hover .bordered-image {
   transform: scale(1.03); /* Scales the image on hover */
@@ -130,7 +130,7 @@ body {
   border-radius: 3px;
   z-index: 0;
 }
-.text-gradient2{
+.text-gradient2 {
   font-size: 24px;
   font-weight: 630;
   background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
@@ -139,11 +139,11 @@ body {
   -webkit-background-clip: text;
   background-image: linear-gradient(to top, #9be15d 0%, #00e3ae 100%);
 }
-.font-color{
+.font-color {
   background: #f3b4b4 !important;
 }
-.navbar-toggler-icon{
- background-image: var(--bs-navbar-toggler-icon-bg) !important;
+.navbar-toggler-icon {
+  background-image: var(--bs-navbar-toggler-icon-bg) !important;
 }
 
 ::-webkit-scrollbar {
@@ -163,7 +163,7 @@ body {
 ::-webkit-scrollbar-track {
   background: #f9f9f9;
 }
-.portofolio-card{
+.portofolio-card {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -171,15 +171,15 @@ body {
   flex-wrap: wrap;
   width: 100%;
 }
-.portofolio-card .card-subitem{
+.portofolio-card .card-subitem {
   margin: 7px;
 }
-.testimonial{
+.testimonial {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 500px;
-  background-image: url('https://img.freepik.com/free-photo/golden-frame-blue-background_53876-92990.jpg?size=626&ext=jpg&ga=GA1.1.260354095.1700988836&semt=sph');
+  background-image: url("https://img.freepik.com/free-photo/golden-frame-blue-background_53876-92990.jpg?size=626&ext=jpg&ga=GA1.1.260354095.1700988836&semt=sph");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -187,7 +187,7 @@ body {
   margin: 10px auto;
   border-radius: 7px;
 }
-.testimonial-card{
+.testimonial-card {
   display: flex;
   flex-direction: column;
   width: 270px;
@@ -196,18 +196,17 @@ body {
   padding: 20px;
   border-radius: 3px;
 }
-.color2{
+.color2 {
   font-size: 46px !important;
   font-weight: 700 !important;
   font-family: serif;
 }
-.testimonial-a{
-font-family: serif !important;
-color: rgb(132, 183, 253) ;
-font-size: 17px;
-font-weight: 600;
-margin: 10px !important;
-
+.testimonial-a {
+  font-family: serif !important;
+  color: rgb(132, 183, 253);
+  font-size: 17px;
+  font-weight: 600;
+  margin: 10px !important;
 }
 @media (min-width: 560px) {
   .testimonial-card {
@@ -215,63 +214,67 @@ margin: 10px !important;
     height: 350px;
   }
 }
-.card{
+.card {
   background: transparent;
   border: none !important;
-  box-shadow:none !important;
-
+  box-shadow: none !important;
 }
 .card-body {
-    flex: 1 1 auto;
-    background: var(--bg-color);
-    padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
-    color: var(--bs-card-color);
+  flex: 1 1 auto;
+  background: var(--bg-color);
+  padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+  color: var(--bs-card-color);
 }
-.card-title{
+.card-title {
   color: var(--heading-color) !important;
   font-family: "Dhurjati", sans-serif;
   font-size: 27px !important;
 }
-.card-text{
+.card-text {
   color: antiquewhite;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-.heading{
-font-size: 28px !important;
-color: var(--heading-color);
+.heading {
+  font-size: 28px !important;
+  color: var(--heading-color);
 }
-.p-text{
+.p-text {
   text-decoration: none !important;
   color: #797979;
 }
-.p-text1{
+.p-text1 {
   font-size: 20px !important;
-color: var(--paragraph-color);
+  color: var(--paragraph-color);
 }
 .card .bg-image {
   border-top-left-radius: none !important;
   border-top-right-radius: none !important;
 }
-.contact-card{
-  background:  transparent !important;;
+.contact-card {
+  background: transparent !important;
 }
-.form-control:focus,.form-control:active,.form-control:visited,.form-control:hover,.form-control:focus-within,.form-control:focus-visible{
+.form-control:focus,
+.form-control:active,
+.form-control:visited,
+.form-control:hover,
+.form-control:focus-within,
+.form-control:focus-visible {
   background: transparent !important;
   color: white !important;
 }
-.form-label{
+.form-label {
   color: var(--paragraph-color) !important;
   font-size: 14px !important;
 }
-.contact-button{
-  box-shadow: none !important;;
+.contact-button {
+  box-shadow: none !important;
   background: var(--heading-color) !important;
   padding: 5px !important;
   color: #000428 !important;
-  border: none  !important;
+  border: none !important;
   width: 100px !important;
 }
-.form-control{
+.form-control {
   color: var(--paragraph-color) !important;
 }
 .modal {
@@ -310,7 +313,6 @@ color: var(--paragraph-color);
   color: red !important;
 }
 
-
 /* You can adjust the max-width and padding as needed */
 .portfolioCard_subItem {
   max-width: 100%;
@@ -320,28 +322,31 @@ color: var(--paragraph-color);
   padding: 5px;
   box-sizing: border-box;
 }
-@media (max-width: 575px) { /* Mobile devices */
+@media (max-width: 575px) {
+  /* Mobile devices */
   .portfolioCard_subItem img {
     height: 350px;
     width: 350px;
   }
 }
 
-@media (min-width: 576px) and (max-width: 767px) { /* Small devices */
+@media (min-width: 576px) and (max-width: 767px) {
+  /* Small devices */
   .portfolioCard_subItem img {
     height: 400px;
     width: 400px;
   }
 }
 
-@media (min-width: 768px) { /* Large devices */
+@media (min-width: 768px) {
+  /* Large devices */
   .portfolioCard_subItem img {
     height: 300px;
     width: 300px;
     padding: 5px;
   }
 }
-.whatsappIcon{
+.whatsappIcon {
   background: #000;
   border-radius: 50%;
   align-items: center;
@@ -352,36 +357,142 @@ color: var(--paragraph-color);
 }
 .modal-header .btn-close {
   color: darkred !important;
-  background-image: url('https://cdn-icons-png.flaticon.com/128/11450/11450177.png') !important;
+  background-image: url("https://cdn-icons-png.flaticon.com/128/11450/11450177.png") !important;
   background-size: 100% 100% !important;
-background-position: center}
-
+  background-position: center;
+}
 
 .modal-header .btn-close:hover {
   color: darkred !important;
 }
-.dropzone p{
-  border: 1px solid #141414;;
+.dropzone p {
+  border: 1px solid #141414;
   background: #0f0909e3;
   color: #e7f6c5;
-  height: 60px ;
+  height: 60px;
   width: 100%;
   text-align: center;
   border-radius: 7px;
   font-size: 12px;
 }
-.modal-body .form-control{
+.modal-body .form-control {
   background: #100a0ae3 !important;
   color: wheat !important;
 }
 .modal-body .form-control:focus {
   box-shadow: none !important;
-  border: 1px solid wheat !important;;
+  border: 1px solid wheat !important;
 }
-.portfolio-details_content{
+.portfolio-details_content {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: auto;
   width: 100%;
 }
+/* Add this CSS to your component or import it from a separate stylesheet */
+
+/* Add this CSS to your styles file or component */
+
+/* Add this CSS to your styles file or component */
+
+/* Styles for the overlay/background */
+.ModalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Styles for the modal content */
+.ModalContent {
+  background-color: #170505; /* White background for the modal */
+  padding: 20px;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
+  max-width: 360px; /* Adjust the max-width based on your content */
+  width: 100%;
+  position: relative;
+   border-radius: 8px !important;
+}
+
+.popUpButtonContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: auto !important;
+}
+
+/* Center the modal content vertically and horizontally */
+.ModalContent {
+  text-align: center;
+}
+
+.popUpText {
+  font-size: 17px !important;
+  color: var(--paragraph-color);
+}
+.CloseButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background-color: white; /* Set close button background color to red */
+  color: red; /* Set close button text color to white */
+  border-radius: 50%; /* Make close button circular */
+}
+
+.CloseButton:hover {
+  text-decoration: underline;
+}
+.imageGallery .card{
+  border-radius: 7px !important;
+}
+.imageGallery {
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .imageGallery {
+    img {
+      height: 130px;
+      width: 160px;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .imageGallery {
+    img {
+      height: 150px;
+      width: 180px;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .imageGallery {
+    img {
+      height: 180px;
+      width: 210px;
+    }
+  }
+}
+
+

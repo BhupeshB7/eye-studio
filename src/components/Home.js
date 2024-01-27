@@ -9,6 +9,7 @@ import Testomonial from "../pages/Testomonial";
 import Testimonial from "../pages/Testimonial";
 import Portfolio from "../pages/Portfolio";
 import WhatsApp from "./WhatsApp";
+import PopUpComponent from "./PopUpComponent";
 const Home = () => {
   const controls = useAnimation();
 
@@ -26,6 +27,7 @@ const Home = () => {
       {/* <Testomonial/> */}
       <CarouselHome />
       {/* <Login/> */}
+      <PopUpComponent/>
       <motion.div initial={{ opacity: 0 }} animate={controls}>
         <Container>
           <Row className="mt-3">
