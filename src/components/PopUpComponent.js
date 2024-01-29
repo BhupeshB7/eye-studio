@@ -23,7 +23,7 @@ const PopUpComponent = () => {
 
     const timer = setTimeout(() => {
       setShowPopup(true);
-    }, 1000); // 1 minute in milliseconds
+    }, 5000); // 1 minute in milliseconds
 
     return () => {
       // Cleanup function to clear the timer when the component unmounts

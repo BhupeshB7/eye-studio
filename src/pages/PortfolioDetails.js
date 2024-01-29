@@ -20,7 +20,7 @@ const PortfolioDetails = () => {
       try {
         const response = await fetch(
           `https://studio-n1sc.onrender.com/api/portfolio/posts/${id}`
-        );
+        );  
         const data = await response.json();
         if (data.success) {
           setPortfolioItem(data.data);
@@ -47,11 +47,11 @@ const PortfolioDetails = () => {
             {/* Display portfolio item details here */}
             {loading ? (
               // Show loading spinner or message while data is being fetched
-              <p>Loading...</p>
+              <p className="text-center text-light">Loading...</p>
             ) : (
               <div>
                 {/* Lazy load the image component */}
-                <Suspense fallback={<p>Loading image...</p>}>
+                <Suspense fallback={<p className="text-center text-slate-200">Loading image...</p>}>
                   <LazyImage src={portfolioItem.coverImage} alt="coverImage..." />
                 </Suspense>
                 <p className="p-text1">{portfolioItem.title}</p>
@@ -64,6 +64,7 @@ const PortfolioDetails = () => {
                       key={index}
                       item={item}
                       index={index}
+                     
                     />
                   ))}
                 </Col>
@@ -106,3 +107,5 @@ const LazyImageWithMotion = ({ item, index }) => {
 };
 
 export default PortfolioDetails;
+
+

@@ -33,9 +33,8 @@ body {
   font-size: 23px !important;
 }
 .navbar-toggler {
-  border: 2px solid var(--heading-color) !important;
-  background: var(--heading-color) !important;
-  color: #171616 !important;
+  border: none !important;
+  background: transparent !important;
 }
 .image-container {
   position: relative;
@@ -156,7 +155,12 @@ body {
   background: #f3b4b4 !important;
 }
 .navbar-toggler-icon {
-  background-image: var(--bs-navbar-toggler-icon-bg) !important;
+  background-image: url("./Assets/Menu.png")!important;
+  
+}
+.active .navbar-toggler-icon {
+  background-image: url("https://cdn-icons-png.flaticon.com/128/11527/11527988.png")!important;
+  background-image: url("./Assets/close.png")!important;
 }
 
 
@@ -512,4 +516,21 @@ body {
       width: 100%;
     }
   }
+}
+/* In your CSS file or component styles */
+.navbar-toggler-bg {
+  transition: background-image 0.3s ease; /* Optional: Add transition for smoother effect */
+  background-image: url("https://cdn-icons-png.flaticon.com/128/5461/5461272.png");
+  /* Add other styles as needed */
+}
+
+.navbar-toggler-bg.active {
+  background-image: url("https://cdn-icons-png.flaticon.com/128/4735/4735391.png");
+  /* Add other styles as needed for the active state */
+}
+.spinner_Content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
 }
