@@ -13,8 +13,8 @@ const Contact = () => {
           <Col>
             <div className="image-container">
               <img
-                src="https://img.freepik.com/premium-photo/close-up-contact-us-word_352439-2475.jpg?size=626&ext=jpg&ga=GA1.1.260354095.1700988836&semt=sph"
-                height="320px"
+                src="https://media.istockphoto.com/id/1315611661/photo/contact-us-sign-with-work-space-and-computer.webp?b=1&s=170667a&w=0&k=20&c=UQLg4GDDxkPalm7yYaZsfQEaqAKr-ZphV8UTQNfW7GI="
+                height="360px"
                 width="90%"
                 alt="about"
                 style={{ borderRadius: "7px" }}

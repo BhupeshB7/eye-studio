@@ -126,7 +126,7 @@ const Portfolio = () => {
     const fetchPortfolioItems = async () => {
       try {
         const response = await fetch(
-          "https://studio-n1sc.onrender.com/api/portfolio/recent"
+          "https://studio-shubhlagnam.cyclic.app/api/portfolio/recent"
         ); // Replace with your backend API endpoint
         const data = await response.json();
         if (data.success) {

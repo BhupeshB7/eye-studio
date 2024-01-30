@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Dhurjati&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dhurjati&family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,700&display=swap");
 *,
 :root {
   --bg-color: #141414;
@@ -22,10 +23,29 @@ body {
 .navbar-background {
   background: #000428 !important;
   background-image: linear-gradient(to left, #434343 0%, black 100%) !important;
-  background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
- background-blend-mode: multiply,multiply;
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.15) 0%,
+      rgba(0, 0, 0, 0.15) 100%
+    ),
+    radial-gradient(
+        at top center,
+        rgba(255, 255, 255, 0.4) 0%,
+        rgba(0, 0, 0, 0.4) 120%
+      )
+      #989898;
+  background-blend-mode: multiply, multiply;
 }
-
+.homeBackgroundContent {
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' fill='none' viewBox='0 0 200 200' version='1.1' xmlnsXlink='http://www.w3.org/1999/xlink' xmlnsSvgjs='http://svgjs.dev/svgjs'%3E%3Cpath fill='%23272727' d='M165.963 134.037c-5.467 5.467-14.332 5.467-19.799 0l-24.137-24.138c-5.468-5.467-5.468-14.331 0-19.799l24.137-24.137c5.467-5.467 14.332-5.467 19.799 0L190.101 90.1c5.467 5.468 5.467 14.332 0 19.799l-24.138 24.138Zm-112.127 0c-5.467 5.467-14.332 5.467-19.8 0L9.9 109.899c-5.468-5.467-5.468-14.331 0-19.799l24.137-24.137c5.467-5.467 14.332-5.467 19.799 0L77.973 90.1c5.468 5.468 5.468 14.332 0 19.799l-24.137 24.138ZM109.9 190.1c-5.468 5.468-14.332 5.468-19.8 0l-24.137-24.137c-5.467-5.467-5.467-14.332 0-19.799l24.138-24.137c5.467-5.468 14.331-5.468 19.799 0l24.137 24.137c5.467 5.467 5.467 14.332 0 19.799L109.9 190.1Zm0-112.127c-5.468 5.468-14.332 5.468-19.8 0L65.963 53.836c-5.467-5.468-5.467-14.332 0-19.8L90.101 9.9c5.467-5.467 14.331-5.467 19.799 0l24.137 24.138c5.467 5.467 5.467 14.331 0 19.799L109.9 77.973Z'%3E%3C/path%3E%3Cdefs%3E%3ClinearGradient gradientTransform='rotate(0 0.5 0.5)' id='SvgjsLinearGradient1194'%3E%3Cstop stopOpacity='1' stopColor='rgba(105, 234, 203)' offset='0'%3E%3C/stop%3E%3Cstop stopOpacity='1' stopColor='rgba(234, 204, 248)' offset='0.48'%3E%3C/stop%3E%3Cstop stopOpacity='1' stopColor='rgba(29, 0, 255)' offset='1'%3E%3C/stop%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E");
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 .text-color,
 .nav-link {
   color: rgb(237, 183, 125) !important;
@@ -39,6 +59,9 @@ body {
 .image-container {
   position: relative;
   text-align: center;
+}
+.image-container img {
+  mix-blend-mode: soft-light;
 }
 /* .card2{
   background-color: rgba(
@@ -81,12 +104,14 @@ body {
   margin: 5px auto; /* Adjust margin to center the line */
 }
 .text-gradient {
-  font-size: 24px;
-  font-weight: 630;
+  font-size: 24px !important;
+  font-weight: 660 !important;
   background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
+  font-family: "Dhurjati", sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 .line2 {
   width: 120px;
@@ -151,18 +176,26 @@ body {
   -webkit-background-clip: text;
   background-image: linear-gradient(to top, #9be15d 0%, #00e3ae 100%);
 }
+.home-p-text {
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(to bottom, #ffcd68 0%, #ff4444 100%);
+  font-size: 17px !important;
+  font-weight: 550 !important;
+  font-family: "Dhurjati", sans-serif;
+  font-family: "Rubik", sans-serif;
+}
 .font-color {
   background: #f3b4b4 !important;
 }
 .navbar-toggler-icon {
-  background-image: url("./Assets/Menu.png")!important;
-  
+  background-image: url("./Assets/Menu.png") !important;
 }
 .active .navbar-toggler-icon {
-  background-image: url("https://cdn-icons-png.flaticon.com/128/11527/11527988.png")!important;
-  background-image: url("./Assets/close.png")!important;
+  background-image: url("https://cdn-icons-png.flaticon.com/128/11527/11527988.png") !important;
+  background-image: url("./Assets/close.png") !important;
 }
-
 
 .portofolio-card {
   display: flex;
@@ -377,7 +410,6 @@ body {
   transition: transform 0.3s ease-in-out; /* Optional: Add smooth transition effect */
 }
 
-
 .modal-header .btn-close {
   color: darkred !important;
   background-image: url("https://cdn-icons-png.flaticon.com/128/11450/11450177.png") !important;
@@ -443,7 +475,7 @@ body {
   max-width: 360px; /* Adjust the max-width based on your content */
   width: 100%;
   position: relative;
-   border-radius: 8px !important;
+  border-radius: 8px !important;
 }
 
 .popUpButtonContent {
@@ -480,7 +512,7 @@ body {
 .CloseButton:hover {
   text-decoration: underline;
 }
-.imageGallery .card{
+.imageGallery .card {
   border-radius: 7px !important;
 }
 .imageGallery {
@@ -528,9 +560,61 @@ body {
   background-image: url("https://cdn-icons-png.flaticon.com/128/4735/4735391.png");
   /* Add other styles as needed for the active state */
 }
-.spinner_Content{
+.spinner_Content {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: auto;
+}
+
+/* Gallery.css (CSS Stylesheet) */
+
+.gallery-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.diamond-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.diamond-gallery img {
+  width: 100px; /* Adjust as needed */
+  height: 100px; /* Adjust as needed */
+  transform: rotate(45deg);
+  margin: 10px;
+}
+
+.diamond-center {
+  transform: rotate(45deg);
+  margin-bottom: 20px;
+}
+
+.diamond-center img {
+  width: 200px; /* Adjust as needed */
+  height: 200px; /* Adjust as needed */
+  border-radius: 7px;
+}
+.gallery-container {
+  position: relative;
+}
+
+.gallery-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  pointer-events: none;
+  z-index: 1;
+}
+
+.react-photo-album-photo {
+  position: relative;
+  z-index: 2;
 }
