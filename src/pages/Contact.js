@@ -1,13 +1,10 @@
 import React from "react";
-import NavbarStudio from "../components/NavbarStudio";
-import Footer from "../components/Footer";
 import { Col, Container, Row } from "react-bootstrap";
 import ContactForm from "./ContactForm";
 
 const Contact = () => {
   return (
     <div>
-      <NavbarStudio />
       <Container>
         <Row>
           <Col>
@@ -62,7 +59,6 @@ const Contact = () => {
           ></iframe>
           </div>
       </div>
-      <Footer />
     </div>
   );
 };

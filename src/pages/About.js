@@ -2,8 +2,6 @@ import React, { useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import NavbarStudio from "../components/NavbarStudio";
-import Footer from "../components/Footer";
 import MultiItemCarousel from "./MultiItemCarousel";
 
 const About = () => {
@@ -23,7 +21,6 @@ const About = () => {
 
   return (
     <div>
-      <NavbarStudio />
 
       <motion.div
         ref={ref1}
@@ -157,12 +154,12 @@ const About = () => {
               className="d-flex justify-content-center align-items-center"
             >
               <div className="image-containerAbout d-flex justify-content-center align-items-center">
-                <div className="border1"></div>
+               
                 <img
                   className="bordered-image"
-                  src="https://img.freepik.com/free-photo/portrait-happy-bearded-young-man-glasses-standing-outdoors_171337-14763.jpg?size=626&ext=jpg&ga=GA1.1.260354095.1700988836&semt=sph"
+                  src="https://img.freepik.com/free-photo/camera-photographic-with-smartphone-devices-generative-ai_188544-12171.jpg?size=626&ext=jpg&ga=GA1.1.260354095.1700988836&semt=sph"
                   height="350px"
-                  width="90%"
+                  width="100%"
                   alt="about_sub"
                   style={{ zIndex: "1000" }}
                 />
@@ -175,7 +172,6 @@ const About = () => {
       <div className="mt-5"></div>
       <MultiItemCarousel />
       <div className="mt-5"></div>
-      <Footer />
     </div>
   );
 };

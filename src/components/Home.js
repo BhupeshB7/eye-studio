@@ -1,7 +1,5 @@
 import React, { useEffect } from "react";
-import NavbarStudio from "./NavbarStudio";
 import CarouselHome from "./CarouselHome";
-import Footer from "./Footer";
 import { motion, useAnimation } from "framer-motion";
 import { Col, Container, Row } from "react-bootstrap";
 
@@ -23,7 +21,6 @@ const Home = () => {
 
   return (
     <div>
-      <NavbarStudio />
       {/* <Testomonial/> */}
       <CarouselHome />
       {/* <Login/> */}
@@ -117,7 +114,6 @@ const Home = () => {
       <MultiItemCarousel />
       {/* Portfolio End */}
       <WhatsApp />
-      <Footer />
     </div>
   );
 };

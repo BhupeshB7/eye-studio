@@ -38,9 +38,12 @@ function NavbarStudio() {
             <LinkContainer to="/images">
               <Nav.Link className="text-color">Image</Nav.Link>
             </LinkContainer>
-            <LinkContainer to="/admin/portfolio/create">
-              <Nav.Link className="text-color">Add Portfolio</Nav.Link>
+            <LinkContainer to="/video">
+              <Nav.Link className="text-color">Video</Nav.Link>
             </LinkContainer>
+            {/* <LinkContainer to="/admin/portfolio/create">
+              <Nav.Link className="text-color">Add Portfolio</Nav.Link>
+            </LinkContainer> */}
           </Nav>
         </Navbar.Collapse>
       </Container>
@@ -49,3 +52,5 @@ function NavbarStudio() {
 }
 
 export default NavbarStudio;
+
+

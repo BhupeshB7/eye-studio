@@ -134,8 +134,6 @@ import axios from "axios";
 import { motion } from "framer-motion";
 import { Col, Container, Row, Spinner } from "react-bootstrap";
 import { useInView } from "react-intersection-observer";
-import Footer from "../components/Footer";
-import NavbarStudio from "../components/NavbarStudio";
 import PhotoAlbum from "./PhotoAlbum";
 
 const PortfolioList = () => {
@@ -188,7 +186,6 @@ const PortfolioList = () => {
   
   return (
     <div>
-      <NavbarStudio />
 
       <Container>
         <Row>
@@ -210,8 +207,8 @@ const PortfolioList = () => {
               <div key={post._id} className="mb-4">
                 <p className="text-gradient2">Title: {post.title}</p>
                 <div className="line2"></div>
-                <p className="p-text">Details: {post.details}</p>
-                <p className="p-text">Content: {post.content}</p>
+                <p className="p-text1">Details: {post.details}</p>
+                <p className="p-text1">Content: {post.content}</p>
                 <div>
                   <Col className="portofolio-card">
                     {post.images.map((item, index) => (
@@ -260,7 +257,6 @@ const PortfolioList = () => {
         
       </Container>
       <PhotoAlbum />
-      <Footer />
     </div>
   );
 };

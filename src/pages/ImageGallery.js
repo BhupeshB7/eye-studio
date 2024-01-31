@@ -48,16 +48,11 @@
 
 // export default ImageGallery;
 
-
-
-
-import React, { useState } from "react";
-import Footer from "../components/Footer"; // Replace with actual import for Footer
+import React, { useState } from "react"; // Replace with actual import for Footer
 import { Col, Container, Row } from "react-bootstrap";
-import Lightbox from 'react-18-image-lightbox';
-import 'react-18-image-lightbox/style.css'; 
-// import "react-image-lightbox/style.css";
-import NavbarStudio from "../components/NavbarStudio"; // Replace with actual import for NavbarStudio
+import Lightbox from "react-18-image-lightbox";
+import "react-18-image-lightbox/style.css";
+// import "react-image-lightbox/style.css"; // Replace with actual import for NavbarStudio
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 
@@ -115,7 +110,6 @@ const ImageGallery = () => {
 
   return (
     <>
-      <NavbarStudio /> {/* Replace with your actual NavbarStudio component */}
       <Container>
         <p
           className="text-gradient text-center pt-3"
@@ -128,21 +122,21 @@ const ImageGallery = () => {
         </h5>
         <p className="text-center p-text">
           Our minds are the canvases, and every image memory is a masterpiece,
-          telling the story of a moment that became a part of us. Images are
-          the bookmarks of our minds, allowing us to revisit the chapters of
-          our lives whenever we choose. The beauty of image memories lies in
-          their ability to transport us back in time, allowing us to relive the
-          magic of moments long gone.
+          telling the story of a moment that became a part of us. Images are the
+          bookmarks of our minds, allowing us to revisit the chapters of our
+          lives whenever we choose. The beauty of image memories lies in their
+          ability to transport us back in time, allowing us to relive the magic
+          of moments long gone.
         </p>
         <Row>
           {images.map((image, index) => (
             <Col xs={6} md={4} lg={3}>
-            <ImageContainer
-              key={index}
-              image={image}
-              index={index}
-              openLightbox={openLightbox}
-            />
+              <ImageContainer
+                key={index}
+                image={image}
+                index={index}
+                openLightbox={openLightbox}
+              />
             </Col>
           ))}
         </Row>
@@ -167,8 +161,6 @@ const ImageGallery = () => {
           enableZoom={true}
         />
       )}
-
-      <Footer /> {/* Replace with your actual Footer component */}
     </>
   );
 };

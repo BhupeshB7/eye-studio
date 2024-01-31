@@ -54,7 +54,7 @@ const Gallery = () => {
   return (
     <div>
       <Container className="mt-3 mb-3">
-        <p className="text-gradient ">Updated All Portfolio Images...</p>
+        <p className="text-gradient2 ">Updated All Portfolio Images...</p>
         <div className="line2 mb-3"></div>
         {photos.length > 0 ? (
           <PhotoAlbum layout="rows" photos={photos} />
