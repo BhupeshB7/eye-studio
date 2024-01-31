@@ -1,10 +1,12 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import ContactForm from "./ContactForm";
+import NavbarStudio from "../components/NavbarStudio";
 
 const Contact = () => {
   return (
     <div>
+      <NavbarStudio/>
       <Container>
         <Row>
           <Col>

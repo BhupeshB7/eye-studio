@@ -8,6 +8,7 @@ import WhatsApp from "./WhatsApp";
 import PopUpComponent from "./PopUpComponent";
 import MultiItemCarousel from "../pages/MultiItemCarousel";
 import Gallery from "../pages/Gallery";
+import NavbarStudio from "./NavbarStudio";
 const Home = () => {
   const controls = useAnimation();
 
@@ -22,6 +23,7 @@ const Home = () => {
   return (
     <div>
       {/* <Testomonial/> */}
+      <NavbarStudio/>
       <CarouselHome />
       {/* <Login/> */}
       <PopUpComponent />

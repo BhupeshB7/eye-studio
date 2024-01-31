@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Alert, Button, Col, Container, Row } from 'react-bootstrap';
+import NavbarStudio from '../components/NavbarStudio';
 
 const Video = () => {
     const [videos, setVideos] = useState([]);
@@ -37,9 +38,10 @@ const Video = () => {
 
     return (
         <div>
+            <NavbarStudio/>
             <Container>
-                <p className='heading'>Latest Video</p>
-                <div className='line2'></div>
+                <p className='p-text1 mt-1'>Latest Video</p>
+                <div className='line2 mb-3'></div>
                 <Row className='justify-content-center'>
                     {videos.map((video) => {
                         const showAlert = deletingVideoId === video._id && (error || message);

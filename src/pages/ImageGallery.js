@@ -55,6 +55,7 @@ import "react-18-image-lightbox/style.css";
 // import "react-image-lightbox/style.css"; // Replace with actual import for NavbarStudio
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
+import NavbarStudio from "../components/NavbarStudio";
 
 const images = [
   {
@@ -110,6 +111,7 @@ const ImageGallery = () => {
 
   return (
     <>
+    <NavbarStudio/>
       <Container>
         <p
           className="text-gradient text-center pt-3"

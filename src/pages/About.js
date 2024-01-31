@@ -3,6 +3,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import MultiItemCarousel from "./MultiItemCarousel";
+import NavbarStudio from "../components/NavbarStudio";
 
 const About = () => {
   const fadeInVariants = {
@@ -21,7 +22,7 @@ const About = () => {
 
   return (
     <div>
-
+       <NavbarStudio/>
       <motion.div
         ref={ref1}
         initial="hidden"

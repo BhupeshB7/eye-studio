@@ -42,7 +42,7 @@ const App = () => {
       )}
       {isOnline && (
         <BrowserRouter>
-        <NavbarStudio/>
+        {/* <NavbarStudio/> */}
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />

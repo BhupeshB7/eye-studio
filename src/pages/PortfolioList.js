@@ -135,6 +135,7 @@ import { motion } from "framer-motion";
 import { Col, Container, Row, Spinner } from "react-bootstrap";
 import { useInView } from "react-intersection-observer";
 import PhotoAlbum from "./PhotoAlbum";
+import NavbarStudio from "../components/NavbarStudio";
 
 const PortfolioList = () => {
   const [posts, setPosts] = useState([]);
@@ -186,7 +187,7 @@ const PortfolioList = () => {
   
   return (
     <div>
-
+<NavbarStudio/>
       <Container>
         <Row>
           <p className="text-gradient text-center p-2">Latest Portfolio</p>
