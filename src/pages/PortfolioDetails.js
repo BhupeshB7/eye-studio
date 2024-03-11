@@ -74,7 +74,7 @@ const PortfolioDetails = () => {
         </Row>
       </Container>
       <Portfolio/>
-      <Footer/>
+      {/* <Footer/> */}
     </div>
   );
 };
