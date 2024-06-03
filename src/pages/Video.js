@@ -12,7 +12,7 @@ const Video = () => {
     useEffect(() => {
         const fetchVideos = async () => {
             try {
-                const response = await axios.get('https://studio-shubhlagnam.cyclic.app/api/video/get');
+                const response = await axios.get('https://studio-n1sc.onrender.com/api/video/get');
                 setVideos(response.data.videos)
             } catch (error) {
                 console.error(error);
@@ -26,7 +26,7 @@ const Video = () => {
         setDeletingVideoId(id);
 
         try {
-            const response = await axios.delete(`https://studio-shubhlagnam.cyclic.app/api/video/deleteById/${id}`);
+            const response = await axios.delete(`https://studio-n1sc.onrender.com/api/video/deleteById/${id}`);
             setVideos((prevVideos) => prevVideos.filter(video => video._id !== id));
             setMessage(response.data.message);
         } catch (error) {

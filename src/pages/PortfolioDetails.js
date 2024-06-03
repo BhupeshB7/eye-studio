@@ -19,7 +19,7 @@ const PortfolioDetails = () => {
     const fetchPortfolioItem = async () => {
       try {
         const response = await fetch(
-          `https://studio-shubhlagnam.cyclic.app/api/portfolio/posts/${id}`
+          `https://studio-n1sc.onrender.com/api/portfolio/posts/${id}`
         );  
         const data = await response.json();
         if (data.success) {

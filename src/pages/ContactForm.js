@@ -29,7 +29,7 @@ export default function ContactForm() {
     try {
       setIsLoading(true); // Set loading to true during form submission
 
-      const response = await axios.post("https://studio-shubhlagnam.cyclic.app/api/contactForm/send-email", formData);
+      const response = await axios.post("https://studio-n1sc.onrender.com/api/contactForm/send-email", formData);
       if (response && response.data.success) {
         console.log("Email sent successfully");
         setShowSuccessAlert(true);

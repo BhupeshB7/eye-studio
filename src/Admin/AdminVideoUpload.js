@@ -36,7 +36,7 @@ const AdminVideoUpload = () => {
       // Additional validation if needed
 
       const response = await axios.post(
-        "https://studio-shubhlagnam.cyclic.app/api/video/upload",
+        "https://studio-n1sc.onrender.com/api/video/upload",
         {
           title,
           videoLink,

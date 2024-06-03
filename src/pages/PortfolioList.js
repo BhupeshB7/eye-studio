@@ -151,7 +151,7 @@ const PortfolioList = () => {
   const fetchPosts = async () => {
     try {
       const response = await axios.get(
-        `https://studio-shubhlagnam.cyclic.app/api/portfolio/posts?page=${currentPage}`
+        `https://studio-n1sc.onrender.com/api/portfolio/posts?page=${currentPage}`
       );
       const data = response.data;
 

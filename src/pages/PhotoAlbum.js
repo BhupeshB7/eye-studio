@@ -9,7 +9,7 @@ const Gallery = () => {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          "https://studio-shubhlagnam.cyclic.app/api/portfolio/post/images"
+          "https://studio-n1sc.onrender.com/api/portfolio/post/images"
         );
         const data = await response.json();
 
@@ -96,7 +96,7 @@ export default Gallery;
 //     const fetchData = async () => {
 //       try {
 //         const response = await fetch(
-//           "https://studio-shubhlagnam.cyclic.app/api/portfolio/post/images"
+//           "https://studio-n1sc.onrender.com/api/portfolio/post/images"
 //         );
 //         const data = await response.json();
 
